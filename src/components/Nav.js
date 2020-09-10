@@ -5,17 +5,15 @@ function Nav() {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <nav class="navbar" role="navigation" aria-label="main navigation">
-      <div class="navbar-brand">
-        <a class="navbar-item" href="/">
-          <a className="navbar-item">
-            Market Ready Painting
-                    </a>
+    <nav className="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+      <div className="navbar-brand">
+        <a className="navbar-item" href="/">
+          Market Ready Painting
         </a>
 
         <a
           role="button"
-          class={toggle ? "navbar-burger is-active" : "navbar-burger"}
+          className={toggle ? "navbar-burger is-active" : "navbar-burger"}
           aria-label="menu"
           aria-expanded="false"
           data-target="dropdown"
