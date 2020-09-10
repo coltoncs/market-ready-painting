@@ -1,0 +1,66 @@
+.mainquote {
+  position: relative;
+  font-style: italic;
+  text-indent: 15px;
+  &:before {
+      content: '\201C';
+      font-family: serif;
+      position: absolute;
+      top: -0.5em;
+      left: -0.25em;
+      color: darken(#e9e9e9, 7%);
+      font-size: 6em;
+      z-index: -1;
+   }
+}
+
+.quoteend {
+  float: right;
+  color: #888;
+  font-style: italic;
+}
+
+.bq-testimonial {
+  position: relative;
+  font-size: 1.4em;
+  line-height: 1.5em;
+
+  margin-top: 15%;
+  margin-bottom: 15%;
+  
+  footer {
+    font-size: 0.6em;
+    font-weight: 700;
+    color: darken(#e9e9e9, 15%);
+    float: right;
+    
+    &:before {
+      content: '\2015'; 
+    }
+  }
+  &:after {
+      content: '\201D';
+      font-family: serif;
+      position: absolute;
+      top: 0.28em;
+      right: 0;
+      font-size: 6em;
+      font-style: italic;
+      color: darken(#e9e9e9, 7%);
+      z-index: -1;
+   }
+}
+
+.aside {
+  margin-left: 20px;
+  margin-right: 20px;
+
+  .content {
+    padding: 25px;
+    
+    .button {
+      width: 50%;
+      margin-left: 25%;
+    }
+  }
+}
