@@ -15,19 +15,19 @@ function Home() {
         <div className="container">
           <nav class="level">
             <div class="level-item has-text-centered">
-              <ScrollAnimation animateIn="fadeInUp" animateOnce="true">
+              <ScrollAnimation animateIn="fadeInUp" animateOnce={true}>
                 <p class="heading">Years Experience</p>
                 <p class="title">25+</p>
               </ScrollAnimation>
             </div>
             <div class="level-item has-text-centered">
-              <ScrollAnimation animateIn="fadeInUp" delay="500" animateOnce="true">
+              <ScrollAnimation animateIn="fadeInUp" delay={500} animateOnce={true}>
                 <p class="heading">Happy Customers</p>
                 <p class="title">100+</p>
               </ScrollAnimation>
             </div>
             <div class="level-item has-text-centered">
-              <ScrollAnimation animateIn="fadeInUp" delay="1000" animateOnce="true">
+              <ScrollAnimation animateIn="fadeInUp" delay={1000} animateOnce={true}>
                 <p class="heading">Built Additions</p>
                 <p class="title">10+</p>
               </ScrollAnimation>
@@ -51,7 +51,7 @@ function Home() {
             <div className="column is-two-thirds">
               <h1 className="title">Testimonials</h1>
 
-              <ScrollAnimation animateIn="animate__backInLeft" animateOnce="true">
+              <ScrollAnimation animateIn="animate__backInLeft" animateOnce={true}>
                 <blockquote class="bq-testimonial content">
                   "Incredibly efficient and professional! I was extremely impressed with how quickly Danny got back to me when I posted the job.
                   He worked with my schedule to give me a quote and complete the project. We have already scheduled our next project with him!"
@@ -59,7 +59,7 @@ function Home() {
                 </blockquote>
               </ScrollAnimation>
 
-              <ScrollAnimation animateIn="animate__backInLeft" animateOnce="true">
+              <ScrollAnimation animateIn="animate__backInLeft" animateOnce={true}>
                 <blockquote class="bq-testimonial content">
                   "Danny and his crew did an excellent job. Was quick to respond, very clean, neat and very organized.
                   They painted our whole interior in 2 days. We have had many homes painted this was the best experience.
@@ -69,7 +69,7 @@ function Home() {
                 </blockquote>
               </ScrollAnimation>
 
-              <ScrollAnimation animateIn="animate__backInLeft" animateOnce="true">
+              <ScrollAnimation animateIn="animate__backInLeft" animateOnce={true}>
                 <blockquote class="bq-testimonial content">
                   "Danny responded to my request for a quote promptly. His pricing was competitive and he was available to begin as needed.
                   His crew was professional, courteous, and considerate. Mr. Sweeney assured me that I would be completely satisfied with his
@@ -79,7 +79,7 @@ function Home() {
                 </blockquote>
               </ScrollAnimation>
 
-              <ScrollAnimation animateIn="animate__backInLeft" animateOnce="true">
+              <ScrollAnimation animateIn="animate__backInLeft" animateOnce={true}>
                 <blockquote class="bq-testimonial content">
                   "I wish I could give Danny 100 stars! He is truly gifted! He is very professional, his prices are reasonable
                   and his painting skills are like no other! Danny thank you for making my first home beautiful!"
@@ -89,14 +89,14 @@ function Home() {
             </div>
             <div className="column aside">
               <h2 className="subtitle">My Promise</h2>
-              <ScrollAnimation className="content" animateIn="animate__backInRight" animateOnce="true">
+              <ScrollAnimation className="content" animateIn="animate__backInRight" animateOnce={true}>
                 I’ll only work with the best materials available and provide a 1 year guarantee on all labor. I never compromise quality for time
                 and give my clients realistic schedules that accommodate their lives. I strive for honest customer service, so contracts are only
                 paid in full when the finished work is to your complete satisfaction.
                 <br />
                 <br />
                 <br />
-                <ScrollAnimation animateIn="animate__heartBeat" initiallyVisible="true" delay="1250" duration="2" animateOnce="true">
+                <ScrollAnimation animateIn="animate__heartBeat" initiallyVisible={true} delay={1250} duration={2} animateOnce={true}>
                   <Link className="button is-warning" to="/gallery">See my work</Link>
                 </ScrollAnimation>
               </ScrollAnimation>
