@@ -1,4 +1,5 @@
 import React, { useState, useRef } from 'react';
+import { Helmet } from 'react-helmet';
 import emailjs from 'emailjs-com';
 import ScrollAnimation from 'react-animate-on-scroll';
 import { useForm } from 'react-hook-form';
@@ -20,7 +21,10 @@ function Contact() {
 
   return (
     <div>
-      <Hero color="is-warning" title="Contact Us" subtitle="Request a quote or inquire about services" />
+      <Helmet>
+        <title>Contact Us | Market Ready Painting</title>
+      </Helmet>
+      <Hero color="is-primary" title="Contact Us" subtitle="Request a quote or inquire about services" />
       <section className="section">
         <div className="container">
           {status !== '' && (

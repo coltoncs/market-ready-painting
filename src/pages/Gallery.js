@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
+import { Helmet } from 'react-helmet';
 import ScrollAnimation from 'react-animate-on-scroll';
 import './Gallery.scss';
 
 import Hero from '../components/Hero';
-
-
 
 function Gallery() {
   const [toggle, setToggle] = useState(false);
@@ -21,6 +20,9 @@ function Gallery() {
 
   return (
     <div>
+      <Helmet>
+        <title>Our Gallery | Market Ready Painting</title>
+      </Helmet>
       <Hero color="is-success" title="Our Work" subtitle="A collection of happy customers" />
       <section className="section">
         <div className={toggle ? 'modal is-active' : 'modal'}>

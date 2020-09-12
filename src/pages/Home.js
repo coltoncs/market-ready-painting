@@ -1,42 +1,44 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 import ScrollAnimation from 'react-animate-on-scroll';
-//import { faPaintRoller, faHome, faCheckCircle } from "@fortawesome/free-solid-svg-icons";
-//import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Hero from '../components/Hero';
-
 import './Home.scss';
+
+import Hero from '../components/Hero';
 
 function Home() {
   return (
     <div>
-      <Hero color="is-primary" title="Market Ready Painting" subtitle="Your local home repair specialist" />
+      <Helmet>
+        <title>Market Ready Painting NC</title>
+      </Helmet>
+      <Hero color="has-home-img" title="Market Ready Painting" subtitle="Your local home repair specialist" />
       <section className="section">
         <div className="container">
-          <nav class="level">
-            <div class="level-item has-text-centered">
+          <nav className="level">
+            <div className="level-item has-text-centered">
               <ScrollAnimation animateIn="fadeInUp" animateOnce={true}>
-                <p class="heading">Years Experience</p>
-                <p class="title">25+</p>
+                <p className="heading">Years Experience</p>
+                <p className="title">25+</p>
               </ScrollAnimation>
             </div>
-            <div class="level-item has-text-centered">
+            <div className="level-item has-text-centered">
               <ScrollAnimation animateIn="fadeInUp" delay={500} animateOnce={true}>
-                <p class="heading">Happy Customers</p>
-                <p class="title">100+</p>
+                <p className="heading">Happy Customers</p>
+                <p className="title">100+</p>
               </ScrollAnimation>
             </div>
-            <div class="level-item has-text-centered">
+            <div className="level-item has-text-centered">
               <ScrollAnimation animateIn="fadeInUp" delay={1000} animateOnce={true}>
-                <p class="heading">Built Additions</p>
-                <p class="title">10+</p>
+                <p className="heading">Built Additions</p>
+                <p className="title">10+</p>
               </ScrollAnimation>
             </div>
           </nav>
         </div>
       </section>
       <section className="section">
-        <ScrollAnimation animateIn="fadeIn" duration="3" animateOnce="true" className="container">
+        <ScrollAnimation animateIn="fadeIn" duration={3} animateOnce={true} className="container">
           <p className="content is-large mainquote">Carpentry, painting, repairs, restoration, and more. My services might be varied, but they all
           come with the same promise of quality, dedication, and durability. Licensed and insured, I’m an experienced contractor with a well-qualified
           and trusted team. I'm personally always on-site ensuring attention to detail and even an element of fun. I love what I do!
@@ -52,7 +54,7 @@ function Home() {
               <h1 className="title">Testimonials</h1>
 
               <ScrollAnimation animateIn="animate__backInLeft" animateOnce={true}>
-                <blockquote class="bq-testimonial content">
+                <blockquote className="bq-testimonial content">
                   "Incredibly efficient and professional! I was extremely impressed with how quickly Danny got back to me when I posted the job.
                   He worked with my schedule to give me a quote and complete the project. We have already scheduled our next project with him!"
                     <footer>Meg R.</footer>
@@ -60,7 +62,7 @@ function Home() {
               </ScrollAnimation>
 
               <ScrollAnimation animateIn="animate__backInLeft" animateOnce={true}>
-                <blockquote class="bq-testimonial content">
+                <blockquote className="bq-testimonial content">
                   "Danny and his crew did an excellent job. Was quick to respond, very clean, neat and very organized.
                   They painted our whole interior in 2 days. We have had many homes painted this was the best experience.
                   We also hired Danny to do built-in bookcases for our library and he is an excellent carpenter.
@@ -70,7 +72,7 @@ function Home() {
               </ScrollAnimation>
 
               <ScrollAnimation animateIn="animate__backInLeft" animateOnce={true}>
-                <blockquote class="bq-testimonial content">
+                <blockquote className="bq-testimonial content">
                   "Danny responded to my request for a quote promptly. His pricing was competitive and he was available to begin as needed.
                   His crew was professional, courteous, and considerate. Mr. Sweeney assured me that I would be completely satisfied with his
                   work and that was the case. Actually, I added several additional tasks for him to do. We were very pleased with his work and
@@ -80,7 +82,7 @@ function Home() {
               </ScrollAnimation>
 
               <ScrollAnimation animateIn="animate__backInLeft" animateOnce={true}>
-                <blockquote class="bq-testimonial content">
+                <blockquote className="bq-testimonial content">
                   "I wish I could give Danny 100 stars! He is truly gifted! He is very professional, his prices are reasonable
                   and his painting skills are like no other! Danny thank you for making my first home beautiful!"
                     <footer>Whitney L.</footer>

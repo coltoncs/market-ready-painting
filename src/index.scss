@@ -1,8 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&family=Didact+Gothic&display=swap');
+
 $body-background-color: #F5FFFA;
-//#F5FFFA
+
+$footer-padding: 2rem 1.5rem 3rem;
+$footer-background-color: hsl(0,0%,92%);
+
+$family-primary: 'Didact Gothic', sans-serif;
+$family-secondary: 'Arimo', sans-serif;
 
 .navbar {
     background: rgba(0,0,0,0);
+}
+
+.footer {
+    font-size: 0.8rem;
+}
+
+.content {
+    font-family: $family-secondary;
 }
 
 @import 'bulma/bulma';

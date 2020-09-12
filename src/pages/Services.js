@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 import ScrollAnimation from 'react-animate-on-scroll';
 import './Services.scss';
@@ -9,6 +10,9 @@ import Hero from '../components/Hero';
 function Services() {
   return (
     <div>
+      <Helmet>
+        <title>Available Services | Market Ready Painting</title>
+      </Helmet>
       <Hero color="is-info" title="Services Offered" subtitle="View our collection of available services"/>
       <ScrollAnimation animateIn="fadeInLeft" animateOnce={true} duration={2} className="section">
         <div className="container service">

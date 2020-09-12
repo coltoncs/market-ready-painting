@@ -27,10 +27,10 @@ function Nav() {
 
       <div id="dropdown" className={ toggle ? "navbar-menu is-active" : "navbar-menu"}>
         <div className="navbar-end">
-          <Link className="navbar-item" to="/">Home</Link>
-          <Link className="navbar-item" to="/services">Services</Link>
-          <Link className="navbar-item" to="/gallery">Gallery</Link>
-          <Link className="navbar-item" to="/contact">Contact</Link>
+          <Link className="navbar-item" to="/" onClick={() => setToggle(!toggle)}>Home</Link>
+          <Link className="navbar-item" to="/services" onClick={() => setToggle(!toggle)}>Services</Link>
+          <Link className="navbar-item" to="/gallery" onClick={() => setToggle(!toggle)}>Gallery</Link>
+          <Link className="navbar-item" to="/contact" onClick={() => setToggle(!toggle)}>Contact</Link>
         </div>
       </div>
     </nav>

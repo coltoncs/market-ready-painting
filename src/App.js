@@ -2,6 +2,7 @@ import React from 'react';
 import {BrowserRouter, Switch, Route} from 'react-router-dom';
 
 import Nav from './components/Nav';
+import Footer from './components/Footer';
 
 import Home from './pages/Home';
 import Services from './pages/Services';
@@ -26,6 +27,7 @@ function App() {
           <Home/>
         </Route>
       </Switch>
+      <Footer/>
     </BrowserRouter>
   );
 }
