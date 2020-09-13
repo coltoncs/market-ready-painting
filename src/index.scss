@@ -8,12 +8,12 @@ $footer-background-color: hsl(0,0%,92%);
 $family-primary: 'Didact Gothic', sans-serif;
 $family-secondary: 'Arimo', sans-serif;
 
-.navbar {
-    background: rgba(0,0,0,0);
-}
-
 .footer {
     font-size: 0.8rem;
+
+    .social {
+        font-size: 1.5rem;
+    }
 }
 
 .content {
