@@ -28,7 +28,7 @@ function Contact() {
       <section className="section">
         <div className="container">
           {status !== '' && (
-            <div className="notification has-text-centered">{status}</div>
+            <ScrollAnimation animateIn="fadeInLeft" animateOnce={true} className="notification has-text-centered">{status}</ScrollAnimation>
           )}
           <div className="columns">
             <ScrollAnimation animateIn="animate__backInLeft" animateOnce={true} className="column  has-text-centered">

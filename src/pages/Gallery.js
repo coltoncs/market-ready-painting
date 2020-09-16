@@ -37,28 +37,28 @@ function Gallery() {
         </div>
         <div className="container gallery">
           <ScrollAnimation animateIn={animation} animateOnce={true} className="gallery-item">
-            <img src="https://tumhompl.sirv.com/Images/Photo%2BApr%2B12%2C%2B1%2B27%2B14%2BPM.jpg" width="750" height="1000" alt="Fence and trellice painting" onClick={(e) => handleClick(e)} />
+            <img src="https://tumhompl.sirv.com/MarketReadyPainting/Gallery/trellice_painting.jpg" width="750" height="1000" alt="Backyard trellice and fence painting" onClick={(e) => handleClick(e)} />
           </ScrollAnimation>
           <ScrollAnimation animateIn={animation} delay={250} animateOnce={true} className="gallery-item">
-            <img src="https://tumhompl.sirv.com/Images/Photo%2BApr%2B22%2C%2B11%2B54%2B02%2BAM.jpg" width="750" height="422" alt="Interior painting and repair" onClick={(e) => handleClick(e)} />
+            <img src="https://tumhompl.sirv.com/MarketReadyPainting/Gallery/interior_painting.jpg" width="750" height="422" alt="Interior painting and repair" onClick={(e) => handleClick(e)} />
           </ScrollAnimation>
           <ScrollAnimation animateIn={animation} delay={500} animateOnce={true} className="gallery-item">
-            <img src="https://tumhompl.sirv.com/Images/Photo%2BApr%2B22%2C%2B11%2B54%2B05%2BAM%2B(1).jpg" width="750" height="422" alt="Custom built decks and landings" onClick={(e) => handleClick(e)} />
+            <img src="https://tumhompl.sirv.com/MarketReadyPainting/Gallery/deck_renovations.jpg" width="750" height="422" alt="Complete deck renovations" onClick={(e) => handleClick(e)} />
           </ScrollAnimation>
           <ScrollAnimation animateIn={animation} delay={750} animateOnce={true} className="gallery-item">
-            <img src="https://tumhompl.sirv.com/Images/Photo%2BApr%2B22%2C%2B11%2B54%2B07%2BAM.jpg" width="1000" height="562" alt="Exterior paint and repair" onClick={(e) => handleClick(e)} />
+            <img src="https://tumhompl.sirv.com/MarketReadyPainting/Gallery/exterior_painting.jpg" width="1000" height="562" alt="Exterior paint and repair" onClick={(e) => handleClick(e)} />
           </ScrollAnimation>
           <ScrollAnimation animateIn={animation} animateOnce={true} className="gallery-item">
-            <img src="https://tumhompl.sirv.com/Images/Photo%2BApr%2B22%2C%2B11%2B54%2B08%2BAM%2B(1).jpg" width="750" height="422" alt="Roof and shingle repair" onClick={(e) => handleClick(e)} />
+            <img src="https://tumhompl.sirv.com/MarketReadyPainting/Gallery/front_deck_repair.jpg" width="750" height="422" alt="House exterior" onClick={(e) => handleClick(e)} />
           </ScrollAnimation>
           <ScrollAnimation animateIn={animation} delay={250} animateOnce={true} className="gallery-item">
-            <img src="https://tumhompl.sirv.com/Images/Photo%2BApr%2B12%2C%2B1%2B25%2B09%2BPM.jpg" width="750" height="563" alt="Powerwashing and exterior touch-ups" onClick={(e) => handleClick(e)}  />
+            <img src="https://tumhompl.sirv.com/MarketReadyPainting/Gallery/frontporch_ceiling.jpg" width="1500" height="844" alt="Front porch door and ceiling repair" onClick={(e) => handleClick(e)} />
           </ScrollAnimation>
           <ScrollAnimation animateIn={animation} delay={500} animateOnce={true} className="gallery-item">
-            <img src="https://tumhompl.sirv.com/Images/Photo%2BApr%2B12%2C%2B1%2B26%2B09%2BPM.jpg" width="750" height="1000" alt="Furniture repair and repainting" onClick={(e) => handleClick(e)}  />
+            <img src="https://tumhompl.sirv.com/MarketReadyPainting/Gallery/furniture_refinish.jpg" width="750" height="1000" alt="Furniture repair and repaint" onClick={(e) => handleClick(e)} />
           </ScrollAnimation>
           <ScrollAnimation animateIn={animation} delay={750} animateOnce={true} className="gallery-item">
-            <img src="https://tumhompl.sirv.com/Images/Photo%2BJun%2B07%2C%2B10%2B24%2B26%2BAM.jpg" width="500" height="889" alt="Front door and patio painting, restoration" onClick={(e) => handleClick(e)}  />
+            <img src="https://tumhompl.sirv.com/MarketReadyPainting/Gallery/sprinkleepoxy.jpg" width="600" height="442" alt="Garage floor sprinkle epoxy" onClick={(e) => handleClick(e)} />
           </ScrollAnimation>
         </div>
       </section>
