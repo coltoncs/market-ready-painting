@@ -60,6 +60,9 @@ function Gallery() {
           <ScrollAnimation animateIn={animation} delay={750} animateOnce={true} className="gallery-item">
             <img src="https://tumhompl.sirv.com/MarketReadyPainting/Gallery/sprinkleepoxy.jpg" width="600" height="442" alt="Garage floor sprinkle epoxy" onClick={(e) => handleClick(e)} />
           </ScrollAnimation>
+          <ScrollAnimation animateIn={animation} delay={250} animateOnce={true} className="gallery-item">
+            <img src="https://tumhompl.sirv.com/MarketReadyPainting/Gallery/BEFORENAFTER.jpg" width="1000" height="800" alt="Before and after of staircase refinish" onClick={(e) => handleClick(e)} />
+          </ScrollAnimation>
         </div>
       </section>
     </div>

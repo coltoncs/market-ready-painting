@@ -9,13 +9,16 @@ import './Contact.scss';
 
 import Hero from '../components/Hero';
 
+const SERVICE_ID;
+const TEMPLATE_ID;
+
 function Contact() {
   const [status, setStatus] = useState('');
   const {register, handleSubmit, errors} = useForm();
   const formRef = useRef(null);
 
   const onSubmit = (data) => {
-    emailjs.sendForm('service_hridu79', 'template_jrm3so9', formRef.current).then((res) => setStatus("Email successfully sent!"), (err) => setStatus("Error sending email, please try again later."));
+    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, formRef.current).then((res) => setStatus("Email successfully sent!"), (err) => setStatus("Error sending email, please try again later."));
     formRef.current.reset();
   }
 
@@ -50,15 +53,31 @@ function Contact() {
               <form ref={formRef} onSubmit={handleSubmit(onSubmit)}>
                 <div className="field">
                   <label className="label">Name</label>
-                  <div className="control">
-                    <input required className="form-input input" type="text" name="name" placeholder="Name" ref={register} />
+                  <div className="control has-icons-left">
+                    <input required className="form-input input" type="text" name="name" placeholder="Name" ref={register({required: true})} />
+                    <span className="icon is-small is-left">
+                      <FontAwesomeIcon icon={faAddressCard} />
+                    </span>
                     <LineGroup/>
                   </div>
                 </div>
                 <div className="field">
                   <label className="label">Email</label>
-                  <div className="control">
+                  <div className="control has-icons-left">
                     <input required className="form-input input" type="email" name="email" placeholder="Email" ref={register({required: true})} />
+                    <span className="icon is-small is-left">
+                      <FontAwesomeIcon icon={faEnvelope} />
+                    </span>
+                    <LineGroup/>
+                  </div>
+                </div>
+                <div className="field">
+                  <label className="label has-icons-left">Phone</label>
+                  <div className="control has-icons-left">
+                    <input required className="form-input input" type="tel" name="phone" placeholder="Phone Number" ref={register} />
+                    <span className="icon is-small is-left">
+                      <FontAwesomeIcon icon={faPhone} />
+                    </span>
                     <LineGroup/>
                   </div>
                 </div>
@@ -78,7 +97,7 @@ function Contact() {
                 <div className="field">
                   <label className="label">Message</label>
                   <div className="control">
-                    <textarea className="form-input textarea" name="message" placeholder="Message" ref={register}></textarea>
+                    <textarea className="form-input textarea" name="message" placeholder="Let us know how we can assist..." ref={register}></textarea>
                     <LineGroup/>
                   </div>
                 </div>

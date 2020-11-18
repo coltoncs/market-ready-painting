@@ -4,15 +4,19 @@ import { Link } from 'react-router-dom';
 function Nav() {
   const [toggle, setToggle] = useState(false);
 
+  function handleClick(){
+    setToggle(!toggle);
+    window.scrollTo(0,0);
+  }
+
   return (
-    <nav className="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+    <nav className="navbar is-info is-fixed-top" role="navigation" aria-label="main navigation">
       <div className="navbar-brand">
         <a className="navbar-item" href="/">
           Market Ready Painting
         </a>
 
-        <a
-          role="button"
+        <button
           className={toggle ? "navbar-burger is-active" : "navbar-burger"}
           aria-label="menu"
           aria-expanded="false"
@@ -22,15 +26,15 @@ function Nav() {
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
-        </a>
+        </button>
       </div>
 
       <div id="dropdown" className={ toggle ? "navbar-menu is-active" : "navbar-menu"}>
         <div className="navbar-end">
-          <Link className="navbar-item" to="/" onClick={() => setToggle(!toggle)}>Home</Link>
-          <Link className="navbar-item" to="/services" onClick={() => setToggle(!toggle)}>Services</Link>
-          <Link className="navbar-item" to="/gallery" onClick={() => setToggle(!toggle)}>Gallery</Link>
-          <Link className="navbar-item" to="/contact" onClick={() => setToggle(!toggle)}>Contact</Link>
+          <Link className="navbar-item" to="/" onClick={handleClick}>Home</Link>
+          <Link className="navbar-item" to="/services" onClick={handleClick}>Services</Link>
+          <Link className="navbar-item" to="/gallery" onClick={handleClick}>Gallery</Link>
+          <Link className="navbar-item" to="/contact" onClick={handleClick}>Contact</Link>
         </div>
       </div>
     </nav>

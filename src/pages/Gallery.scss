@@ -12,7 +12,12 @@
     justify-content: center;
 }
 
+.gallery-item:nth-child(9){
+    flex: 0.25 21%;
+}
+
 .gallery-item img {
+    width: 100%;
     margin: 0 auto;
     cursor: pointer;
     transition: transform 2s;

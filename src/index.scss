@@ -20,4 +20,13 @@ $family-secondary: 'Arimo', sans-serif;
     font-family: $family-secondary;
 }
 
+button.navbar-burger {
+    background: inherit;
+    border: none;
+}
+
+button.navbar-burger:focus {
+    outline: 0;
+}
+
 @import 'bulma/bulma';

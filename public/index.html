@@ -16,6 +16,25 @@
 
 <body class="has-navbar-fixed-top">
   <noscript>You need to enable JavaScript to run this app.</noscript>
+  <script src="/__/firebase/7.21.0/firebase-app.js"></script>
+  <script src="/__/firebase/7.21.0/firebase-analytics.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-analytics.js"></script>
+  <script>
+    var firebaseConfig = {
+      apiKey: "AIzaSyDZlYu67wmn7m6nBiMQ8LVp5eeAfbix53g",
+      authDomain: "market-ready-painting-nc.firebaseapp.com",
+      databaseURL: "https://market-ready-painting-nc.firebaseio.com",
+      projectId: "market-ready-painting-nc",
+      storageBucket: "market-ready-painting-nc.appspot.com",
+      messagingSenderId: "226802547101",
+      appId: "1:226802547101:web:fdf4d663ac70ebc5bed774",
+      measurementId: "G-8DTEQJ4LX8"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+  </script>
   <div id="root"></div>
 </body>
 
