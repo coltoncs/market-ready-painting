@@ -12,7 +12,9 @@ function Home() {
       <Helmet>
         <title>Market Ready Painting NC</title>
       </Helmet>
+
       <Hero color="has-home-img" title="Market Ready Painting" subtitle="Your local home repair specialist" />
+
       <section className="section">
         <div className="container">
           <nav className="level">
@@ -37,6 +39,7 @@ function Home() {
           </nav>
         </div>
       </section>
+
       <section className="section">
         <ScrollAnimation animateIn="fadeIn" duration={3} animateOnce={true} className="container">
           <p className="content is-large mainquote">Carpentry, painting, repairs, restoration, and more. My services might be varied, but they all
@@ -46,7 +49,9 @@ function Home() {
           <p className="content is-medium quoteend">-Danny Sweeney</p>
         </ScrollAnimation>
       </section>
+      
       <hr />
+
       <section className="section">
         <div className="container">
           <div className="columns">

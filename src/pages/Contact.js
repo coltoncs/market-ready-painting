@@ -9,14 +9,16 @@ import './Contact.scss';
 
 import Hero from '../components/Hero';
 
+//REPLACE THESE WITH EMAILJS STRINGS IN DEVELOPMENT
 const SERVICE_ID;
 const TEMPLATE_ID;
 
 function Contact() {
-  const [status, setStatus] = useState('');
+  const [status, setStatus] = useState(''); //Alerts user when action is performed (such as successful sending of the form)
   const {register, handleSubmit, errors} = useForm();
   const formRef = useRef(null);
 
+  //Handle the data collection from the form on click of the submit button
   const onSubmit = (data) => {
     emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, formRef.current).then((res) => setStatus("Email successfully sent!"), (err) => setStatus("Error sending email, please try again later."));
     formRef.current.reset();
@@ -27,12 +29,28 @@ function Contact() {
       <Helmet>
         <title>Contact Us | Market Ready Painting</title>
       </Helmet>
+
       <Hero color="is-primary" title="Contact Us" subtitle="Request a quote or inquire about services" />
+      
       <section className="section">
         <div className="container">
+
+          {/*
+          *
+          *     Notification Alert      
+          * 
+          */}
+
           {status !== '' && (
             <ScrollAnimation animateIn="fadeInLeft" animateOnce={true} className="notification has-text-centered">{status}</ScrollAnimation>
           )}
+
+          {/*     
+          *
+          *  Owner Contact Details   
+          *  
+          */}
+
           <div className="columns">
             <ScrollAnimation animateIn="animate__backInLeft" animateOnce={true} className="column  has-text-centered">
               <h2 className="subtitle">Contact Information</h2>
@@ -47,6 +65,12 @@ function Contact() {
               </ul>
               <hr/>
             </ScrollAnimation>
+
+            {/*       
+             *
+             *  Contact Form    
+             *      
+            */}
 
             <ScrollAnimation animateIn="animate__backInRight" animateOnce={true} className="column">
               <h2 className="subtitle  has-text-centered">Let's Get In Touch</h2>
@@ -120,6 +144,7 @@ function Contact() {
   )
 }
 
+//SVG Line seperators for form fields. On active/focus, CSS will animate these
 const LineGroup = () => (
   <svg
     className='form-line'

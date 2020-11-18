@@ -6,10 +6,16 @@ import './Gallery.scss';
 import Hero from '../components/Hero';
 
 function Gallery() {
-  const [toggle, setToggle] = useState(false);
-  const [src, setSrc] = useState();
-  const [alt, setAlt] = useState();
+  const [toggle, setToggle] = useState(false); //Determines whether the modal is active or not
+  const [src, setSrc] = useState(); //src attr for current focused image
+  const [alt, setAlt] = useState(); //alt text for current focused image
 
+  /**
+   * 
+   *  When user clicks on an image, grab the alt text and image src, and toggle the details modal.
+   *  If click event if fired from Close button of an open modal, it will toggle the modal off.
+   *  
+   * */
   function handleClick(e) {
     setSrc(e.target.src);
     setAlt(e.target.alt);
@@ -23,8 +29,16 @@ function Gallery() {
       <Helmet>
         <title>Our Gallery | Market Ready Painting</title>
       </Helmet>
+
       <Hero color="is-success" title="Our Work" subtitle="A collection of happy customers" />
+
       <section className="section">
+        {/*
+        *
+        *  Pop-up modal that provides a closer look at the gallery elements.
+        *  Toggled off by default, click an image to activate the modal.
+        *
+        */}
         <div className={toggle ? 'modal is-active' : 'modal'}>
           <div className="modal-background"></div>
           <div className="modal-content">
@@ -35,6 +49,13 @@ function Gallery() {
           </div>
           <button className="modal-close is-large" aria-label="close" onClick={handleClick}></button>
         </div>
+
+        {/*
+        *
+        *  Gallery component for showcasing some work done by Market Ready Painting.
+        *  Clicking an image toggles the details modal to appear.
+        * 
+        */}
         <div className="container gallery">
           <ScrollAnimation animateIn={animation} animateOnce={true} className="gallery-item">
             <img src="https://tumhompl.sirv.com/MarketReadyPainting/Gallery/trellice_painting.jpg" width="750" height="1000" alt="Backyard trellice and fence painting" onClick={(e) => handleClick(e)} />

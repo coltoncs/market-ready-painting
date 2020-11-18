@@ -13,7 +13,9 @@ function Services() {
       <Helmet>
         <title>Available Services | Market Ready Painting</title>
       </Helmet>
+
       <Hero color="is-info" title="Services Offered" subtitle="View our collection of available services"/>
+
       <ScrollAnimation animateIn="fadeInLeft" animateOnce={true} duration={2} className="section">
         <div className="container service">
           <h1 className="title has-text-centered">Epoxy Garage Floor</h1>
@@ -22,6 +24,7 @@ function Services() {
           <img class="Sirv" data-src="https://tumhompl.sirv.com/MarketReadyPainting/Services/blueepoxy.jpg?w=50%25&h=50%25" alt="" />
         </div>
       </ScrollAnimation>
+
       <ScrollAnimation animateIn="fadeInRight" animateOnce={true} duration={2} className="section">
         <div className="container service">
           <h1 className="title has-text-centered">Decorative Stamped Concrete</h1>
@@ -31,6 +34,7 @@ function Services() {
           <img src="https://tumhompl.sirv.com/MarketReadyPainting/Services/stampedconcrete.jpg" width="512" height="418" alt="" />
         </div>
       </ScrollAnimation>
+
       <ScrollAnimation animateIn="fadeInLeft" animateOnce={true} duration={2} className="section">
         <div className="container service">
           <h1 className="title has-text-centered">Powerwashing</h1>
@@ -40,6 +44,7 @@ function Services() {
           <img class="Sirv" data-src="https://tumhompl.sirv.com/MarketReadyPainting/Services/powerwashing.jpeg?w=10%25&h=10%25" alt="" />    
         </div>
       </ScrollAnimation>
+      
       <ScrollAnimation animateIn="fadeInRight" animateOnce={true} duration={2} className="section">
         <div className="container service">
           <h1 className="title has-text-centered">Interior and Exterior Painting and Repair</h1>
